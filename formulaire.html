@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages des utilisateurs</title>
+</head>
+<body>
+
+    <h2>crivez un commentaire :</h2>
+    <form action="traitement.php" method="POST">
+        <input type="text" name="message" placeholder="Votre message ici..." required>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <h3>Commentaire laissés:</h3>
+    <div id="listeMessages">
+        <?php
+        // Connexion à la base de données
+        $conn = new mysqli("localhost", "root", "", "site_messages");
+        if ($conn->connect_error) {
+            die("Connexion échouée : " . $conn->connect_error);
+        }
+
+        // Récupérer les messages
+        $sql = "SELECT contenu, date_creation FROM messages ORDER BY date_creation DESC";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo "<p><strong>" . htmlspecialchars($row['contenu']) . "</strong> - " . $row['date_creation'] . "</p>";
+            }
+        } else {
+            echo "<p>Aucun message pour l'instant.</p>";
+        }
+        $conn->close();
+        ?>
+    </div>
+
+</body>
+</html>

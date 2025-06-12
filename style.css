@@ -1,0 +1,94 @@
+header{
+background-color: #caf1b1;
+}
+
+body{
+    background-image: url("téléchargement.jpg");
+     background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+   
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+}
+a.navigation{
+    
+    padding-left: 30px;
+    color: #000;
+    font-size:35px;
+    text-decoration: none;
+}
+img.sadio{
+    
+    padding-left:400px;
+}
+h1.welcome{
+font-size: 70px;
+padding-left:500px;
+}
+h2.slogan{
+    padding-left: 400px;
+    color:#fadf8e;
+}
+img.yatabare{
+    padding-left:200px ;
+   
+}
+h1.contact{
+    font-size: 70px;
+    padding-left: 400px;
+   
+}
+h1.réservation{
+    font-size: 70px;
+    padding-left: 300px;
+}
+ul.mail{
+   
+    display: inline-flex;
+    list-style: none;
+}
+
+a.mail{
+    padding-left: 400px;
+}
+h1.psy{
+color: #96b682;
+padding-left: 500px;
+}
+h1.psyc{
+color: #96b682;
+padding-left:400px;
+}
+h2.gh{
+color: #b49e5b;
+padding-left:100px;
+}
+h2.ghi{
+color: #b49e5b;
+padding-left: 400px;
+}
+iframe.carte{
+    padding-left: 400px;
+    font-size:300px;
+}
+img.lierre{
+    padding-left: 400px;
+    padding-bottom: 250px;
+}
+img.lierre1{
+    padding-left: 200px;
+    padding-bottom: 250px;
+}
+body.lierre{
+    background-image: url("téléchargement.jpg");
+     background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+iframe.réserv{
+    padding-left: 400px;
+}
+img.tel{padding-left: 150px;}
