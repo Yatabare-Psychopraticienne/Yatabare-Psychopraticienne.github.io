@@ -1,1 +1,2 @@
-# Yatabare-Psychopraticienne.github.io/Accueil.html
+Bienvenue, afin de rejoindre le site, veuillez cliquer sur le lien ci-dessous:
+#https://yatabare-psychopraticienne.github.io/Accueil.html
